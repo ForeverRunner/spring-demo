@@ -8,8 +8,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class AnnotationConfigApplicationContextDemo {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-//        UserService userService = (UserService) context.getBean("userService");
-//        userService.test();
+        UserService userService = (UserService) context.getBean("userService");
+        userService.test();
         UserService1 userService1 = (UserService1) context.getBean("userService1");
         userService1.test();
 
